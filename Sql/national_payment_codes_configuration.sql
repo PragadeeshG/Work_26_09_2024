@@ -1,0 +1,15 @@
+create table if not exists national_payment_codes_configuration(
+national_payment_codes_id Integer not null,
+national_payment_codes_owner varchar(255) null,
+parent_code_available char null,
+national_payment_codes_type_id Integer null,
+national_payment_codes_type varchar(255) null,
+national_payment_codes_status varchar(255) null,
+national_payment_codes_description Integer null,
+relative_dependencies Integer null,
+parent_code varchar(255) null,
+code_cached_memory_index Integer null,
+request_params_to_retrieve_code varchar(255) null,
+status varchar(255) null,
+consumer_input varchar(255) null,
+constraint national_payment_codes_configuration_pk primary key(national_payment_codes_id));

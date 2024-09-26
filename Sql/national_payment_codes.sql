@@ -1,0 +1,16 @@
+create table if not exists national_payment_codes(
+nation_payment_code varchar(255) not null,
+max_length Integer null,
+enquirey_required varchar(255) null,
+reversal varchar(255) null,
+refund_service varchar(255) null,
+negative_amount varchar(255) null,
+pre_payment char null,
+part_payment varchar(255) null,
+advance_payment varchar(255) null,
+over_payment varchar(255) null,
+exact_payment varchar(255) null,
+max_advance varchar(255) null,
+min_advance varchar(255) null,
+payment_mode_available varchar(255) null,
+constraint national_payment_codes_pk primary key(nation_payment_code));
